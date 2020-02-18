@@ -1,0 +1,24 @@
+#
+# Copyright (c) Vijai Kumar K, 2020
+#
+# Authors:
+#  Vijai Kumar K <vijaikumar.kanagarajan@gmail.com>
+
+# SPDX-License-Identifier: MIT
+
+header:
+  version: 8
+
+target: isar-image-base
+distro: debian-sid-ports
+
+repos:
+  isar:
+    url: https://github.com/ilbers/isar
+    refspec: a6f6fa23829ae6dc03d4e548506f59a34dc0bc0c
+    layers:
+      meta:
+      meta-isar:
+  meta-riscv:
+    url: https://github.com/vj-kumar/meta-riscv
+    refspec: cdb92f82561acd300b6f5195f9376d55400640cd
